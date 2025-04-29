@@ -1,62 +1,20 @@
-// const WelcomeTo = () => {
-//   return (
-//     <section className="relative flex flex-col md:flex-row items-center justify-center h-[50vh] px-8 my-28 bg-white overflow-hidden">
-//       {/* Decorative icons  */}
-//       {/* burger side image and icons */}
-//       <div className="absolute top-4 left-4 opacity-10">
-//         <img src="/path-to-icons/rings.svg" alt="Rings" className="w-16" />
-//       </div>
-//       <div className="absolute bottom-4 right-4 opacity-10">
-//         <img src="/path-to-icons/burger.svg" alt="Burger" className="w-16" />
-//       </div>
-
 import { PhoneCall } from "lucide-react";
-
-//       {/* Image Placeholder */}
-//       <div className="bg-gray-300 w-[300px] h-[200px] md:w-[30vw] md:h-[40vh] rounded-md"></div>
-
-//       {/* Text Content */}
-//       <div className="mt-8 md:mt-0 md:ml-12 max-w-md">
-//         <button className="bg-[#CB3A1A] text-white text-xs px-4 py-2 mb-4 tracking-wide rounded-sm">
-//           MAKE RESERVATION
-//         </button>
-//         <h2 className="text-2xl md:text-3xl font-bold mb-4">
-//           WELCOME TO OUR LUXURY CAFE
-//         </h2>
-//         <p className="text-gray-600 mb-6 text-sm">
-//           The scallops were perfectly cooked, tender, and flavorful, paired
-//           beautifully with a creamy risotto and seasonal vegetables. The
-//           presentation was artful, showcasing the chef’s attention to detail.
-//         </p>
-
-//         <div className="flex items-center gap-2">
-//           <div className="relative flex bg-red-500 rounded-full p-4 w-5 h-5 items-center justify-center text-white">
-//             <span className="">🤚</span>
-//           </div>
-//           {/* ṣide text after call logo */}
-//           <div>
-//             <p className="text-[#74787C] text-[12px] font-extralight">
-//               HOTLINE 24/7
-//             </p>
-//             <span>9940241501</span>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default WelcomeTo;
+import burgerImage from "../assets/burger1.png";
+import burgerImage2 from "../assets/burger2.png";
+import welcomeRingTop from "../assets/welcomeRingTop.png";
 
 const WelcomeTo = () => {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-center min-h-[80vh] md:h-[50vh] px-4 md:px-8 my-12 md:my-4 bg-white overflow-hidden">
+    <section className="relative flex flex-col md:flex-row items-center justify-center min-h-[80vh] md:h-[50vh] px-4 md:px-8 mb-12 md:my-4 bg-white overflow-hidden">
       {/* Decorative icons */}
-      <div className="absolute top-2 left-2 opacity-10 w-12 md:w-16">
-        <img src="/path-to-icons/rings.svg" alt="Rings" className="w-full" />
+      <div className="absolute bottom-2 left-0 w-40 h-40 opacity-50 object-contain hidden md:block">
+        <img src={burgerImage2} alt="Burger" className="object-contain " />
       </div>
-      <div className="absolute bottom-2 right-2 opacity-10 w-12 md:w-16">
-        <img src="/path-to-icons/burger.svg" alt="Burger" className="w-full" />
+      <div className="absolute top-10 -right-2 w-40 h-40 opacity-40 hidden md:block">
+        <img src={burgerImage} alt="Burger" className="object-contain" />
+      </div>
+      <div className="absolute top-10 left-6 w-40 h-40 hidden md:block">
+        <img src={welcomeRingTop} alt="Burger" className="object-contain" />
       </div>
 
       {/* Image Placeholder */}
