@@ -156,7 +156,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import useIsMobile from "./useIsMobile"; // Adjust the path if needed
+import useIsMobile from "./UseIsMobile" 
 
 const InteriorSection = () => {
   const { ref, inView } = useInView({
