@@ -9,6 +9,7 @@ import OurInterior from "./components/OurInterior";
 import OurMenuCategories from "./components/OurMenuCategories";
 import WelcomeTo from "./components/WelcomeTo";
 import "./styles/fonts.css";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <MissionVision />
       <Cta />
       <Footer />
+      <SpeedInsights />
     </div>
   );
 }
