@@ -151,12 +151,9 @@
 
 // export default InteriorSection;
 
-
-
-
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import useIsMobile from "./UseIsMobile" 
+import useIsMobile from "./UseIsMobile";
 
 const InteriorSection = () => {
   const { ref, inView } = useInView({
@@ -206,7 +203,7 @@ const InteriorSection = () => {
   return (
     <section
       ref={ref}
-      className="bg-black text-white py-16 relative overflow-hidden"
+      className="bg-black text-white py-10 pb-16 relative overflow-hidden"
     >
       {/* Top Stats */}
       {isMobile ? (
@@ -230,8 +227,8 @@ const InteriorSection = () => {
                 className="item flex flex-col items-center justify-center text-center"
                 style={{ "--position": index + 1 }}
               >
-                <h2 className="text-3xl font-extrabold">{item.number}+</h2>
-                <p className="uppercase text-sm font-medium mt-1 tracking-wide">
+                <h2 className="text-5xl font-extrabold">{item.number}+</h2>
+                <p className="uppercase text-lg font-medium mt-1 tracking-wide">
                   {item.label}
                 </p>
               </div>
@@ -251,12 +248,12 @@ const InteriorSection = () => {
               className="flex items-center gap-1 text-center md:text-left"
             >
               <h2
-                className="text-3xl font-extrabold count-up"
+                className="text-4xl font-extrabold count-up"
                 data-count={parseInt(item.number)}
               >
                 0+
               </h2>
-              <p className="uppercase text-sm font-medium mt-1 tracking-wide">
+              <p className="uppercase text-xl font-medium mt-1 tracking-wide">
                 {item.label}
               </p>
             </div>
@@ -268,7 +265,7 @@ const InteriorSection = () => {
       <div className="border-t border-gray-700 my-10 w-[70vw] mx-auto"></div>
 
       {/* Our Interiors Title + Arrows */}
-      <div className="w-[70vw] mx-auto px-4 flex items-center justify-between mb-10">
+      <div className="md:w-[70vw] w-[95vw] mx-auto px-4 flex items-center justify-between md:mb-10 mb-5">
         <div>
           <button className="bg-[#CB3A1AD6] text-xs jost-700 rounded-sm px-4 py-1 mb-2">
             VIEW

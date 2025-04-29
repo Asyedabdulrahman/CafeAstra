@@ -6,14 +6,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full z-[9999] relative">
+    <div className="w-full z-[50] relative">
       {/* Navigation Bar */}
-      <nav className="bg-black bg-opacity-70 backdrop-blur-md text-white flex items-center justify-between px-4 py-3 md:px-8 md:py-4 fixed top-0 left-0 w-full z-[9999]">
+      <nav className="bg-[#333333] bg-opacity-70 backdrop-blur-md text-white flex items-center justify-between px-4 py-3 md:px-8 md:py-4 fixed top-0 left-0 w-full z-[9999]">
         {/* Left (Logo or Spacer) */}
-        <div className="md:w-1/3 w-2/3">
+        <div className="md:w-1/3 w-2/3 ">
           <img
             src={cafeAstra3}
-            className="h-16 w-auto p-2 object-cover"
+            className="h-16 p-2 object-cover"
             alt="cafeAstra"
           />
           <div className="md:hidden font-bold text-lg tracking-wide"></div>
@@ -48,7 +48,7 @@ const Header = () => {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={26} /> : <Menu size={26} />}
+            {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </div>
       </nav>

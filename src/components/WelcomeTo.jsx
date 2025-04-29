@@ -5,7 +5,7 @@ import welcomeRingTop from "../assets/welcomeRingTop.png";
 
 const WelcomeTo = () => {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-center min-h-[80vh] md:h-[50vh] px-4 md:px-8 mb-12 md:my-4 bg-white overflow-hidden">
+    <section className="relative flex flex-col md:flex-row items-center justify-center md:h-[50vh] px-4 md:px-8 mb-12 md:my-22 my-8  bg-white overflow-hidden">
       {/* Decorative icons */}
       <div className="absolute bottom-2 left-0 w-40 h-40 opacity-50 object-contain hidden md:block">
         <img src={burgerImage2} alt="Burger" className="object-contain " />

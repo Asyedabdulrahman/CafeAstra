@@ -4,14 +4,14 @@ import ourMissionTopRight from "../assets/ourMissionTopRight.png"; // Adjust the
 
 const MissionVision = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-10 bg-white">
       <div className="w-[90vw] md:w-[65vw] mx-auto px-4 relative">
         {/* Mission and Vision */}
         <div className="text-center mb-12">
-          <button className="bg-[#CB3A1A] text-xs text-white font-semibold px-3 py-1 rounded mb-2">
+          <button className="bg-[#CB3A1A] text-lg text-white font-semibold px-3 py-1 rounded mb-2">
             CLIENT TESTIMONIALS
           </button>
-          <h2 className="text-2xl md:text-3xl font-extrabold">
+          <h2 className="text-3xl md:text-4xl font-extrabold">
             OUR MISSION AND VISION
           </h2>
           <div className="w-px h-6 bg-[#CB3A1A] mx-auto my-2"></div>
@@ -36,7 +36,7 @@ const MissionVision = () => {
         />
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="border border-[#CB3A1A] p-6 sm:text-left text-center py-12">
+          <div className="border border-[#CB3A1A] p-6 sm:text-left text-center py-8">
             <h3 className="font-bold mb-4">MISSION</h3>
             <p className="text-sm text-gray-600 ml-2">
               The only minor downside was the noise level, which made
@@ -46,7 +46,7 @@ const MissionVision = () => {
               service.
             </p>
           </div>
-          <div className="border border-[#CB3A1A] p-6 sm:text-left text-center py-12">
+          <div className="border border-[#CB3A1A] p-6 sm:text-left text-center py-8">
             <h3 className="font-bold mb-4">VISION</h3>
             <p className="text-sm text-gray-600 ml-2">
               The only minor downside was the noise level, which made

@@ -2,24 +2,24 @@ import React from "react";
 
 const OurMenuCategories = () => {
   const categories = [
-    { name: "Coffee", items: "20+" },
-    { name: "Pastries", items: "25+" },
-    { name: "Sandwiches", items: "10+" },
-    { name: "Combos", items: "35+" },
-    { name: "Desserts", items: "15+" },
-    { name: "Soups", items: "20+" },
+    { name: "Coffee", items: "20" },
+    { name: "Pastries", items: "25" },
+    { name: "Sandwiches", items: "10" },
+    { name: "Combos", items: "35" },
+    { name: "Desserts", items: "15" },
+    { name: "Soups", items: "20" },
   ];
 
   return (
-    <section className="w-[70vw] mx-auto px-4 py-10">
+    <section className="md:w-[70vw] w-[90vw] mx-auto px-4 md:px-0 py-10">
       {/* Top Bar */}
-      <div className="flex justify-between items-center mb-8">
-        <button className="bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded">
+      <div className="flex justify-between items-center mb-4">
+        <button className="bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded">
           MENU
         </button>
-        <button className="border border-red-600 text-red-600 text-xs font-semibold px-4 py-2 rounded hover:bg-red-50 transition">
+        {/* <button className="border border-red-600 text-red-600 text-xs font-semibold px-4 py-2 rounded hover:bg-red-50 transition">
           ITEMS
-        </button>
+        </button> */}
       </div>
 
       {/* Heading */}
@@ -44,7 +44,12 @@ const OurMenuCategories = () => {
                     Non nisi est sit amet facilisis magna
                   </p>
                 </div>
-                <span className="text-red-600 font-bold">{category.items}</span>
+                <div>
+                  <span className="text-red-600 font-bold">
+                    {category.items}
+                  </span>
+                  <span className="text-red-600 inline-block">+</span>
+                </div>
               </div>
             ))}
           </div>

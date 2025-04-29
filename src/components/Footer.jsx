@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="max-w-screen-xl mx-auto flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
           {/* Left Section */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 text-center sm:text-left">
-            <div className="flex justify-center sm:justify-start space-x-2">
+            <div className="md:flex justify-center sm:justify-start space-x-2 hidden">
               <span className="w-6 h-6 bg-gray-300 rounded-full" />
               <span className="w-6 h-6 bg-gray-300 rounded-full" />
               <span className="w-6 h-6 bg-gray-300 rounded-full" />
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
 
         {/* Food Menu */}
-        <div>
+        <div className="hidden md:block">
           <h3 className="font-bold mb-4 border-b border-gray-600 pb-2">
             FOOD MENU
           </h3>
@@ -102,7 +102,7 @@ const Footer = () => {
         </div>
 
         {/* Ambience */}
-        <div>
+        <div className="hidden md:block">
           <h3 className="font-bold mb-4 border-b border-gray-600 pb-2">
             AMBIENCE
           </h3>

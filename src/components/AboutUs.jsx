@@ -22,7 +22,7 @@ export const AboutUs = () => {
   ];
 
   return (
-    <section className="w-full bg-[#FAF4EE] py-16 relative overflow-hidden">
+    <section className="w-full bg-[#FAF4EE] py-6 pb-16 relative overflow-hidden">
       {/* Decorative background icons */}
       <img
         src={aboutUsRight}
@@ -37,7 +37,7 @@ export const AboutUs = () => {
       />
 
       {/* Section title */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-6">
         <h2 className="text-3xl font-bold uppercase mb-2">About Us</h2>
         <div className="w-px h-6 bg-[#CB3A1A] mx-auto mb-2"></div>
         <div className="flex justify-center gap-1">
@@ -58,7 +58,7 @@ export const AboutUs = () => {
             <h3 className="text-lg font-bold mb-2 md:text-left text-center">
               {card.title}
             </h3>
-            <p className="text-gray-600 text-sm mb-4 md:text-left text-center">
+            <p className="text-gray-600 text-sm mb-4 text-left justify-center flex-1">
               {card.desc}
             </p>
             <button className="text-[#CB3A1A] border border-[#CB3A1A] px-4 py-2 text-xs jost-600 uppercase tracking-wide w-[70%] hover:bg-red-500 hover:text-white transition md:text-left text-center mx-auto md:mx-0">
