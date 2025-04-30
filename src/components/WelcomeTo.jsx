@@ -1,10 +1,8 @@
 import React, { memo } from "react";
 import { PhoneCall } from "lucide-react";
-
 import burgerImage from "../assets/burger1.png";
 import burgerImage2 from "../assets/burger2.png";
 import welcomeRingTop from "../assets/welcomeRingTop.png";
-// import welcomeimg from "../assets/welcomeRingBottom.png";
 import welcomeimg from "../assets/restaurant.jpg";
 
 const WelcomeTo = () => {
