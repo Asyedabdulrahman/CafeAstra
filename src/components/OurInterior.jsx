@@ -151,11 +151,46 @@
 
 // export default InteriorSection;
 
-import React, { useEffect, useRef } from "react";
+
+import React, { useEffect, useRef, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import useIsMobile from "./UseIsMobile";
 
+// Import images (you can switch these to WebP if you prefer)
+import interior1 from "../assets/interior/interior1.jpg";
+import interior2 from "../assets/interior/interior2.jpg";
+import interior3 from "../assets/interior/interior3.jpg";
+import interior4 from "../assets/interior/interior4.jpg";
+import interior5 from "../assets/interior/interior5.jpg";
+import interior6 from "../assets/interior/interior6.jpg";
+import interior7 from "../assets/interior/interior7.jpg";
+
+const InteriorCard = React.memo(({ src, alt }) => {
+  return (
+    <div className="flex-shrink-0 w-60 md:w-64 h-64 bg-gray-100 group relative overflow-hidden rounded-sm">
+      <img
+        src={src}
+        alt={alt}
+        className="w-full h-full object-cover"
+        loading="lazy" // Lazy load each image
+        width={400}
+        height={400}
+      />
+    </div>
+  );
+});
+
 const InteriorSection = () => {
+  const interiorImages = [
+    interior1,
+    interior2,
+    interior3,
+    interior4,
+    interior5,
+    interior6,
+    interior7,
+  ];
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -164,7 +199,7 @@ const InteriorSection = () => {
   const isMobile = useIsMobile();
   const scrollContainerRef = useRef(null);
 
-  const startCountUp = (el, count) => {
+  const startCountUp = useCallback((el, count) => {
     let currentCount = 0;
     const speed = 20;
     const increment = Math.ceil(count / (500 / speed));
@@ -177,7 +212,7 @@ const InteriorSection = () => {
       }
       el.innerText = currentCount + "+";
     }, speed);
-  };
+  }, []);
 
   useEffect(() => {
     if (inView && !isMobile) {
@@ -186,7 +221,7 @@ const InteriorSection = () => {
         startCountUp(el, count);
       });
     }
-  }, [inView, isMobile]);
+  }, [inView, isMobile, startCountUp]);
 
   const handleScroll = (direction) => {
     const container = scrollContainerRef.current;
@@ -209,11 +244,7 @@ const InteriorSection = () => {
       {isMobile ? (
         <div
           className="slider"
-          style={{
-            "--width": "200px",
-            "--height": "100px",
-            "--quantity": 4,
-          }}
+          style={{ "--width": "200px", "--height": "100px", "--quantity": 4 }}
         >
           <div className="list">
             {[
@@ -260,10 +291,8 @@ const InteriorSection = () => {
           ))}
         </div>
       )}
-
       {/* Divider Line */}
       <div className="border-t border-gray-700 my-10 w-[70vw] mx-auto"></div>
-
       {/* Our Interiors Title + Arrows */}
       <div className="md:w-[70vw] w-[95vw] mx-auto px-4 flex items-center justify-between md:mb-10 mb-5">
         <div>
@@ -291,43 +320,18 @@ const InteriorSection = () => {
           </button>
         </div>
       </div>
-
       {/* Interiors Cards */}
       <div
         ref={scrollContainerRef}
         className="flex overflow-x-auto scrollbar-hide scroll-smooth px-4 max-w-7xl mx-auto gap-4"
       >
-        {[...Array(20)].map((_, idx) => (
-          <div
+        {interiorImages.map((img, idx) => (
+          <InteriorCard
             key={idx}
-            className="flex-shrink-0 w-60 md:w-64 h-64 bg-gray-300 group relative overflow-hidden rounded-sm"
-          >
-            {/* Red Hover */}
-            <div className="absolute inset-0 bg-[#CB3A1AD6] opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-              <div className="bg-white p-3 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-[#CB3A1AD6]"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
+            src={img}
+            alt={`Interior ${idx + 1}`}
+            idx={idx}
+          />
         ))}
       </div>
     </section>

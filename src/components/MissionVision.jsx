@@ -1,10 +1,25 @@
-import React from "react";
-import ourMissionTopLeft from "../assets/ourMissionTopLeft.png"; // Adjust the path as necessary
-import ourMissionTopRight from "../assets/ourMissionTopRight.png"; // Adjust the path as necessary
+import React, { useEffect, useState } from "react";
+import ourMissionTopLeft from "../assets/ourMissionTopLeft.png";
+import ourMissionTopRight from "../assets/ourMissionTopRight.png";
+import welcomeRestaurant from "../assets/restaurant1.jpg";
 
-const MissionVision = () => {
+const MissionVision = React.memo(() => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  // Handle image loading state for the welcomeRestaurant image
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
+  };
+
+  useEffect(() => {
+    // Preload welcomeRestaurant image
+    const image = new Image();
+    image.src = welcomeRestaurant;
+    image.onload = handleImageLoad;
+  }, []);
+
   return (
-    <section className="py-10 bg-white">
+    <section className="py-10 bg-white" id="franchise">
       <div className="w-[90vw] md:w-[65vw] mx-auto px-4 relative">
         {/* Mission and Vision */}
         <div className="text-center mb-12">
@@ -27,12 +42,14 @@ const MissionVision = () => {
           src={ourMissionTopRight}
           alt="Decor1"
           className="absolute top-8 -right-28 w-20 h-20 hidden md:block object-contain"
+          loading="lazy" // Lazy load this image
         />
 
         <img
           src={ourMissionTopLeft}
           alt="Decor1"
           className=" absolute top-8 -left-28 w-20 h-20  hidden md:block object-contain"
+          loading="lazy" // Lazy load this image
         />
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -83,7 +100,16 @@ const MissionVision = () => {
               CONTACT US
             </button>
           </div>
-          <div className="bg-gray-300 h-64 md:h-full w-full md:w-[40%] hidden md:block"></div>
+          <div className="h-64 md:h-full w-full md:w-[40%] hidden md:block">
+            <img
+              src={welcomeRestaurant}
+              alt="welcome"
+              className={`object-cover h-full transition-all duration-500 ease-in-out ${
+                isImageLoaded ? "opacity-100" : "opacity-0"
+              }`}
+              loading="lazy" // Lazy load this image
+            />
+          </div>
         </div>
 
         {/* Meet Founder */}
@@ -111,6 +137,6 @@ const MissionVision = () => {
       </div>
     </section>
   );
-};
+});
 
 export default MissionVision;

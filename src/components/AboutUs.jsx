@@ -2,27 +2,31 @@ import React from "react";
 import aboutUsRight from "../assets/aboutUsRight.png";
 import aboutUsLeft from "../assets/aboutUsLeft.png";
 
+import restaurant1 from "../assets/restaurant1.jpg";
+import restaurant2 from "../assets/restaurant.jpg";
+import restaurant3 from "../assets/restaurant3.jpg";
+
 export const AboutUs = () => {
   const cardComponentsData = [
     {
-      img: "/path-to-image/blank.png",
+      img:  restaurant1 ,
       title: "OUR STORY",
       desc: "The chocolate fondant which did not disappoint. It was rich and indulgent, with a gooey center that was pure bliss.",
     },
     {
-      img: "/path-to-image/blank.png",
+      img: restaurant2 ,
       title: "WHY CHOOSE US",
       desc: "Assertively myocardinate robust e-tailers for extensible human capital. Appropriately benchmark networks.",
     },
     {
-      img: "/path-to-image/blank.png",
+      img:  restaurant3 ,
       title: "ABOUT US",
       desc: "Assertively myocardinate robust e-tailers for extensible human capital. Appropriately benchmark networks.",
     },
   ];
 
   return (
-    <section className="w-full bg-[#FAF4EE] py-6 pb-16 relative overflow-hidden">
+    <section className="w-full bg-[#FAF4EE] py-6 pb-16 relative overflow-hidden" id="about">
       {/* Decorative background icons */}
       <img
         src={aboutUsRight}
@@ -54,7 +58,13 @@ export const AboutUs = () => {
             key={i}
             className="bg-white flex-shrink-0 w-[250px] md:w-[300px] snap-center flex flex-col shadow-md p-4 transition hover:shadow-lg"
           >
-            <div className="w-full h-40 bg-gray-300 mb-4"></div>
+           <div className="w-full h-40 mb-4 overflow-hidden rounded-lg">
+  <img
+    src={card.img}
+    alt="img"
+    className="w-full h-full object-cover"
+  />
+</div>
             <h3 className="text-lg font-bold mb-2 md:text-left text-center">
               {card.title}
             </h3>

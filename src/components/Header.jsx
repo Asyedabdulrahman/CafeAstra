@@ -21,19 +21,19 @@ const Header = () => {
 
         {/* Center (Nav Links) */}
         <div className="hidden md:flex gap-6 text-sm justify-center w-1/3">
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="" className="hover:text-gray-400 transition">
             HOME
           </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="#about" className="hover:text-gray-400 transition">
             ABOUT US
           </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="#menu" className="hover:text-gray-400 transition">
             MENU
           </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="#franchise" className="hover:text-gray-400 transition">
             FRANCHISE
           </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="#contactus" className="hover:text-gray-400 transition">
             CONTACT US
           </a>
         </div>
@@ -63,35 +63,35 @@ const Header = () => {
       >
         <div className="flex flex-col gap-8 text-lg text-white font-medium">
           <a
-            href="#"
+            href="/"
             onClick={() => setIsOpen(false)}
             className="hover:text-gray-400 transition"
           >
             HOME
           </a>
           <a
-            href="#"
+            href="#about"
             onClick={() => setIsOpen(false)}
             className="hover:text-gray-400 transition"
           >
             ABOUT US
           </a>
           <a
-            href="#"
+            href="#menu"
             onClick={() => setIsOpen(false)}
             className="hover:text-gray-400 transition"
           >
             MENU
           </a>
           <a
-            href="#"
+            href="#franchise"
             onClick={() => setIsOpen(false)}
             className="hover:text-gray-400 transition"
           >
             FRANCHISE
           </a>
           <a
-            href="#"
+            href="#contactus"
             onClick={() => setIsOpen(false)}
             className="hover:text-gray-400 transition"
           >

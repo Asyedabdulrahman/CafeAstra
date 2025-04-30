@@ -1,3 +1,5 @@
+import React, { memo } from "react";
+
 import {
   Facebook,
   FacebookIcon,
@@ -6,7 +8,6 @@ import {
   PhoneCall,
   Twitter,
 } from "lucide-react";
-import React from "react";
 import linkedin from "../assets/linkedin.png";
 import facebook from "../assets/facebook2.png";
 import twitter from "../assets/twitter2.png";
@@ -135,4 +136,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);
