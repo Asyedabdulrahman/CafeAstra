@@ -1,74 +1,11 @@
-// import { PhoneCall } from "lucide-react";
-// import burgerImage from "../assets/burger1.png";
-// import burgerImage2 from "../assets/burger2.png";
-// import welcomeRingTop from "../assets/welcomeRingTop.png";
-// import WelcomeRestaurantImage from "../assets/welcomRestaurantImage.jpg";
-
-// const WelcomeTo = () => {
-//   return (
-//     <section className="relative flex flex-col md:flex-row items-center justify-center md:h-[50vh] px-4 md:px-8 mb-12 md:my-22 my-8  bg-white overflow-hidden">
-//       {/* Decorative icons */}
-//       <div className="absolute bottom-2 left-0 w-40 h-40 opacity-50 object-contain hidden md:block">
-//         <img src={burgerImage2} alt="Burger" className="object-contain " />
-//       </div>
-//       <div className="absolute top-10 -right-2 w-40 h-40 opacity-40 hidden md:block">
-//         <img src={burgerImage} alt="Burger" className="object-contain" />
-//       </div>
-//       <div className="absolute top-10 left-6 w-40 h-40 hidden md:block">
-//         <img src={welcomeRingTop} alt="Burger" className="object-contain" />
-//       </div>
-
-//       {/* Image Placeholder */}
-//       <div className="w-[250px] h-[180px] md:w-[30vw] md:h-[60vh] rounded-lg overflow-hidden relative">
-//         <img
-//           src={WelcomeRestaurantImage}
-//           alt="welcomeRestaurantImage"
-//           className="w-full h-full object-cover rounded-lg"
-//         />
-//       </div>
-
-//       {/* Text Content */}
-//       <div className="mt-8 md:mt-0 md:ml-12 max-w-sm md:max-w-md text-center md:text-left">
-//         <button className="bg-[#CB3A1A] text-white text-xs px-5 py-2 mb-4 tracking-wide rounded-sm">
-//           MAKE RESERVATION
-//         </button>
-//         <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug">
-//           WELCOME TO OUR LUXURY CAFE
-//         </h2>
-//         <p className="text-gray-600 mb-6 text-sm leading-relaxed">
-//           The scallops were perfectly cooked, tender, and flavorful, paired
-//           beautifully with a creamy risotto and seasonal vegetables. The
-//           presentation was artful, showcasing the chef’s attention to detail.
-//         </p>
-
-//         <div className="flex items-center justify-center md:justify-start gap-3">
-//           <div className="relative flex bg-[#CB3A1A] rounded-full p-4 w-10 h-10 items-center justify-center text-white text-lg">
-//             <span>
-//               <PhoneCall size={16} />
-//             </span>
-//           </div>
-//           {/* Side text after call logo */}
-//           <div className="text-center md:text-left">
-//             <p className="text-[#74787C] text-[12px] font-extralight">
-//               HOTLINE 24/7
-//             </p>
-//             <span className="text-sm font-medium">9940241501</span>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default WelcomeTo;
-
 import React, { memo } from "react";
 import { PhoneCall } from "lucide-react";
 
 import burgerImage from "../assets/burger1.png";
 import burgerImage2 from "../assets/burger2.png";
 import welcomeRingTop from "../assets/welcomeRingTop.png";
-import WelcomeRestaurantImage from "../assets/welcomRestaurantImage.jpg";
+// import welcomeimg from "../assets/welcomeRingBottom.png";
+import welcomeimg from "../assets/restaurant.jpg";
 
 const WelcomeTo = () => {
   return (
@@ -108,7 +45,7 @@ const WelcomeTo = () => {
       {/* Image Placeholder */}
       <div className="w-[250px] h-[180px] md:w-[30vw] md:h-[60vh] rounded-lg overflow-hidden relative">
         <img
-          src={WelcomeRestaurantImage}
+          src={welcomeimg}
           alt="Interior of the restaurant"
           width={800}
           height={600}
