@@ -151,7 +151,6 @@
 
 // export default InteriorSection;
 
-
 import React, { useEffect, useRef, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import useIsMobile from "./UseIsMobile";
@@ -172,7 +171,7 @@ const InteriorCard = React.memo(({ src, alt }) => {
         src={src}
         alt={alt}
         className="w-full h-full object-cover"
-        loading="lazy" // Lazy load each image
+        fetchpriority="high" // Lazy load each image
         width={400}
         height={400}
       />
