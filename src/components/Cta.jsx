@@ -56,9 +56,11 @@ const Cta = () => {
           <h1 className="text-xl sm:text-3xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight">
             ARE YOU LOOKING TO TAKE A FRANCHISE?
           </h1>
-          <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-gray-800 transition">
-            JOIN WITH US →
-          </button>
+          <a href="#contactus">
+            <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-gray-800 transition">
+              JOIN WITH US →
+            </button>
+          </a>
         </div>
 
         <img

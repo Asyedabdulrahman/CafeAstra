@@ -96,9 +96,11 @@ const MissionVision = React.memo(() => {
               Corner excels in delivering delicious food and exceptional
               service.
             </p>
-            <button className="bg-[#CB3A1A] text-white px-6 py-2 hover:bg-red-700 transition w-full max-w-md mx-auto">
-              CONTACT US
-            </button>
+            <a href="#contactus">
+              <button className="bg-[#CB3A1A] text-white px-6 py-2 hover:bg-red-700 transition w-full max-w-md mx-auto">
+                CONTACT US
+              </button>
+            </a>
           </div>
           <div className="h-64 md:h-full w-full md:w-[40%] hidden md:block">
             <img

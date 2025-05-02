@@ -30,7 +30,10 @@ const Footer = () => {
             <p className="text-gray-300 text-sm">
               Are You{" "}
               <span className="font-semibold">WANT TO TAKE FRANCHISE</span>,{" "}
-              <a href="#" className="underline font-semibold text-white">
+              <a
+                href="#contactus"
+                className="underline font-semibold text-white"
+              >
                 CONTACT US
               </a>
             </p>
@@ -43,7 +46,7 @@ const Footer = () => {
             </div>
             <div className="text-center sm:text-left">
               <p className="text-xs">CONTACT US</p>
-              <p className="font-semibold text-sm">enquiry +91 (8800)-9850</p>
+              <p className="font-semibold text-sm">enquiry +91 7395888258 </p>
             </div>
           </div>
         </div>
