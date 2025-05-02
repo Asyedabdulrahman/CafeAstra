@@ -40,9 +40,11 @@ const Header = () => {
 
         {/* Right (CTA + Mobile Toggle) */}
         <div className="w-1/3 flex justify-end items-center">
-          <button className="hidden md:block border border-red-600 px-4 py-2 text-xs hover:bg-white hover:text-black transition">
-            JOIN WITH US →
-          </button>
+          <a href="#contactus">
+            <button className="hidden md:block border border-red-600 px-4 py-2 text-xs hover:bg-white hover:text-black transition">
+              JOIN WITH US →
+            </button>
+          </a>
           <button
             className="md:hidden text-white"
             onClick={() => setIsOpen(!isOpen)}
