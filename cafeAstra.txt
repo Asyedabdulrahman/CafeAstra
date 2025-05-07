@@ -1,62 +1,51 @@
-import React, { useState, useEffect } from "react";
-import heroCoffeeImage from "../assets/heroCoffeeImage.jpg";
-import hero1 from "../assets/hero1.jpg";
-import hero2 from "../assets/hero2.jpg";
-import cafeAstra3 from "../assets/logo4.svg";
+Foundational Topics:-
 
-const HeroComponent = React.memo(() => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
+*What is Model Context Protocol (MCP), and Why Does It Matter for AI?
 
-  // Handle image loading state
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
-  };
+*Is Model Context Protocol the Key to Making AI Smarter
 
-  useEffect(() => {
-    // Preload the hero image to make sure it loads quickly
-    const image = new Image();
-    image.src = hero1;
-    image.onload = handleImageLoad;
-  }, []);
+*MCP vs Prompt Engineering: Which One Should You Focus On for Powerful AI?
 
-  return (
-    <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <img
-        src={hero1}
-        alt="Coffee Background"
-        className={`absolute w-full h-full object-cover transition-all duration-300 ease-in-out ${
-          isImageLoaded ? "opacity-100" : "opacity-0"
-        }`}
-        loading="eager" // Set high priority for hero image
-      />
 
-      {/* Text Content */}
-      <div className="relative z-10 justify-center items-center flex px-4">
-        <img
-          src={cafeAstra3}
-          alt="cafeAstraLogo"
-          className="w-[90dvw] h-[90dvh] md:w-[50dvw] md:h-[50dvh]"
-        />
-      </div>
-    </div>
-  );
-});
+Technical Deep Dives:-
 
-export default HeroComponent;
+*How Exactly Does Model Context Protocol Work Under the Hood? - remove
 
-{
-  /* <p className="text-2xl md:text-4xl tracking-widest font-bold">
-            THE GREAT
-          </p>
-          <h1 className="text-2xl md:text-6xl font-bold mt-2">
-            TASTE AT EVERY SIP
-          </h1>
-          <div className="flex items-center justify-center gap-4 mt-4">
-            <div className="h-px w-12 bg-white"></div>
-            <p className="text-xl md:text-4xl tracking-wider font-medium">
-              PART OF US
-            </p>
-            <div className="h-px w-12 bg-white"></div>
-          </div> */
-}
+*What Happens Inside GPT-4, Claude, and Gemini When They Use Context?
+
+
+
+ Practical Use Cases:
+*How Can E-Commerce Platforms Use MCP to Create Personalized User Experiences? Done
+
+Tools & Frameworks:
+*Which Tools and Frameworks Support MCP? (LangChain, AutoGen, etc.)
+
+
+ Monetization + Career Content:
+* Can Understanding MCP Help You Make Money with AI?
+* What Job Roles Demand Knowledge of Model Context Protocol?
+* Can You Freelance by Specializing in MCP? Here’s How!
+* How to Pitch Clients on Building Context-Driven AI Solutions?
+
+
+
+Future Vision & Advanced Concepts:-
+*Can Multiple AI Agents Collaborate Using Shared Context Protocols?
+*Is There a Universal MCP Standard Coming Soon?
+
+*Why Should Every AI Founder Be Investing Time to Learn MCP?
+*Should You Build Your Own MCP Layer for Your AI Product or Buy One?
+*How Do OpenAI, Anthropic, and Google Handle Context Differently?
+
+
+
+
+
+
+
+
+
+
+
+

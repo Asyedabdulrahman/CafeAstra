@@ -3,7 +3,8 @@ import { PhoneCall } from "lucide-react";
 import burgerImage from "../assets/burger1.png";
 import burgerImage2 from "../assets/burger2.png";
 import welcomeRingTop from "../assets/welcomeRingTop.png";
-import welcomeimg from "../assets/restaurant.jpg";
+// import welcomeimg from "../assets/restaurant.jpg";
+import welcomeimg from "../assets/shopImage2.jpg";
 
 const WelcomeTo = () => {
   return (
@@ -47,7 +48,7 @@ const WelcomeTo = () => {
           alt="Interior of the restaurant"
           width={800}
           height={600}
-          className="w-full h-full object-cover rounded-lg"
+          className="w-full h-full object-contain"
           loading="eager"
           decoding="async"
           fetchpriority="high"

@@ -1,25 +1,27 @@
 import React from "react";
 import aboutUsRight from "../assets/aboutUsRight.png";
 import aboutUsLeft from "../assets/aboutUsLeft.png";
-
-import restaurant1 from "../assets/restaurant1.jpg";
-import restaurant2 from "../assets/restaurant.jpg";
-import restaurant3 from "../assets/restaurant3.jpg";
+// import restaurant1 from "../assets/restaurant1.jpg";
+// import restaurant2 from "../assets/restaurant.jpg";
+// import restaurant3 from "../assets/restaurant3.jpg";
+import cafeTable from "../assets/cafeTable.jpg";
+import cafeTable2 from "../assets/cafeTable2.jpg";
+import cafeTable3 from "../assets/cafeTable3.jpg";
 
 export const AboutUs = () => {
   const cardComponentsData = [
     {
-      img:  restaurant1 ,
+      img:  cafeTable ,
       title: "OUR STORY",
       desc: "The chocolate fondant which did not disappoint. It was rich and indulgent, with a gooey center that was pure bliss.",
     },
     {
-      img: restaurant2 ,
+      img: cafeTable2 ,
       title: "WHY CHOOSE US",
       desc: "Assertively myocardinate robust e-tailers for extensible human capital. Appropriately benchmark networks.",
     },
     {
-      img:  restaurant3 ,
+      img:  cafeTable3 ,
       title: "ABOUT US",
       desc: "Assertively myocardinate robust e-tailers for extensible human capital. Appropriately benchmark networks.",
     },

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ourMissionTopLeft from "../assets/ourMissionTopLeft.png";
 import ourMissionTopRight from "../assets/ourMissionTopRight.png";
-import welcomeRestaurant from "../assets/restaurant1.jpg";
+import shopImage from "../assets/shopImage2.jpg";
 
 const MissionVision = React.memo(() => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -14,7 +14,7 @@ const MissionVision = React.memo(() => {
   useEffect(() => {
     // Preload welcomeRestaurant image
     const image = new Image();
-    image.src = welcomeRestaurant;
+    image.src = shopImage;
     image.onload = handleImageLoad;
   }, []);
 
@@ -104,9 +104,9 @@ const MissionVision = React.memo(() => {
           </div>
           <div className="h-64 md:h-full w-full md:w-[40%] hidden md:block">
             <img
-              src={welcomeRestaurant}
+              src={shopImage}
               alt="welcome"
-              className={`object-cover h-full transition-all duration-500 ease-in-out ${
+              className={`object-cover h-full transition-all duration-500 ease-in-out rounded-lg ${
                 isImageLoaded ? "opacity-100" : "opacity-0"
               }`}
               loading="lazy" // Lazy load this image

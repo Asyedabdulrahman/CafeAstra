@@ -1,15 +1,10 @@
 import React, { useEffect, useRef, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import useIsMobile from "./UseIsMobile";
-
-// Import images (you can switch these to WebP if you prefer)
-import interior1 from "../assets/interior/interior1.jpg";
-import interior2 from "../assets/interior/interior2.jpg";
-import interior3 from "../assets/interior/interior3.jpg";
-import interior4 from "../assets/interior/interior4.jpg";
-import interior5 from "../assets/interior/interior5.jpg";
-import interior6 from "../assets/interior/interior6.jpg";
-import interior7 from "../assets/interior/interior7.jpg";
+import cafeTable from "../assets/cafeTable.jpg";
+import cafeTable2 from "../assets/cafeTable2.jpg";
+import cafeTable3 from "../assets/cafeTable3.jpg";
+import welcomeimg from "../assets/shopImage2.jpg";
 
 const InteriorCard = React.memo(({ src, alt }) => {
   return (
@@ -18,7 +13,7 @@ const InteriorCard = React.memo(({ src, alt }) => {
         src={src}
         alt={alt}
         className="w-full h-full object-cover"
-        fetchpriority="high" 
+        fetchpriority="high"
         width={400}
         height={400}
       />
@@ -28,13 +23,14 @@ const InteriorCard = React.memo(({ src, alt }) => {
 
 const InteriorSection = () => {
   const interiorImages = [
-    interior1,
-    interior2,
-    interior3,
-    interior4,
-    interior5,
-    interior6,
-    interior7,
+    cafeTable,
+    cafeTable2,
+    cafeTable3,
+    welcomeimg,
+    cafeTable,
+    cafeTable2,
+    cafeTable3,
+    welcomeimg,
   ];
 
   const { ref, inView } = useInView({
