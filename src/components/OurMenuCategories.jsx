@@ -1,7 +1,8 @@
 import React, { useMemo, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-import menuCard from "../assets/menuCard.jpg";
+// import menuCard from "../assets/menuCard.jpg";
+import menuCard from "../assets/3.jpg";
 import coffee from "../assets/coffee.jpg";
 import pastries from "../assets/pastries.jpg";
 import sandwiches from "../assets/sandwich.jpg";
@@ -11,12 +12,42 @@ import soup from "../assets/soups.jpg";
 const starIcons = new Array(5).fill(0);
 
 const categoriesData = [
-  { name: "Coffee", items: "20", img: coffee },
-  { name: "Pastries", items: "25", img: pastries },
-  { name: "Sandwiches", items: "10", img: sandwiches },
-  { name: "Desserts", items: "15", img: desserts },
-  { name: "Soups", items: "20", img: soup },
-  { name: "Combos", items: "35", img: coffee },
+  {
+    name: "Coffee",
+    items: "20",
+    img: coffee,
+    description: "Freshly brewed coffee to energize your day.",
+  },
+  {
+    name: "Pastries",
+    items: "25",
+    img: pastries,
+    description: "Flaky, buttery pastries baked to perfection.",
+  },
+  {
+    name: "Sandwiches",
+    items: "10",
+    img: sandwiches,
+    description: "Hearty and flavorful sandwiches made with fresh.",
+  },
+  {
+    name: "Desserts",
+    items: "15",
+    img: desserts,
+    description: "Indulgent treats to satisfy your sweet tooth.",
+  },
+  {
+    name: "Soups",
+    items: "20",
+    img: soup,
+    description: "Warm, comforting soups full of rich flavor.",
+  },
+  {
+    name: "Combos",
+    items: "35",
+    img: coffee,
+    description: "Perfectly paired meal combos for a complete bite.",
+  },
 ];
 
 const OurMenuCategories = () => {
@@ -35,7 +66,10 @@ const OurMenuCategories = () => {
   const categories = useMemo(() => categoriesData, []);
 
   return (
-    <section className="md:w-[70vw] w-[90vw] mx-auto px-4 md:px-0 py-10" id="menu">
+    <section
+      className="md:w-[70vw] w-[90vw] mx-auto px-4 md:px-0 py-10"
+      id="menu"
+    >
       {/* Top Bar */}
       <div className="flex justify-between items-center mb-4">
         <button className="bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded">
@@ -60,9 +94,10 @@ const OurMenuCategories = () => {
               <img
                 src={menuCard}
                 alt="menuCardImage"
-                className="rounded-lg"
+                className="rounded-lg h-60 w-full object-contain" // <- add these classes
                 loading="lazy"
               />
+
               <div className="p-4">
                 {categories.map((category, idx) => (
                   <div
@@ -72,7 +107,7 @@ const OurMenuCategories = () => {
                     <div>
                       <h3 className="font-bold">{category.name}</h3>
                       <p className="text-xs text-gray-500">
-                        Non nisi est sit amet facilisis magna
+                        {category.description}
                       </p>
                     </div>
                     <div>

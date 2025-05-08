@@ -11,24 +11,27 @@ import cafeTable3 from "../assets/cafeTable3.jpg";
 export const AboutUs = () => {
   const cardComponentsData = [
     {
-      img:  cafeTable ,
+      img: cafeTable,
       title: "OUR STORY",
-      desc: "The chocolate fondant which did not disappoint. It was rich and indulgent, with a gooey center that was pure bliss.",
+      desc: "CafeAstra began with a love for comfort food and great coffee. From rich desserts to spicy chicken tikka pizza, our menu is crafted to satisfy every craving in a cozy setting.",
     },
     {
-      img: cafeTable2 ,
+      img: cafeTable2,
       title: "WHY CHOOSE US",
-      desc: "Assertively myocardinate robust e-tailers for extensible human capital. Appropriately benchmark networks.",
+      desc: "We offer fresh, flavorful food, fast service, and a vibrant space to unwind. Whether it's coffee, burgers, or BBQ pizza—you'll always find quality at CafeAstra.",
     },
     {
-      img:  cafeTable3 ,
+      img: cafeTable3,
       title: "ABOUT US",
-      desc: "Assertively myocardinate robust e-tailers for extensible human capital. Appropriately benchmark networks.",
+      desc: "CafeAstra is a friendly café serving coffee, burgers, pizzas, and more. With a relaxed vibe and tasty menu, it's the perfect place to eat, chill, and connect.",
     },
   ];
 
   return (
-    <section className="w-full bg-[#FAF4EE] py-6 pb-16 relative overflow-hidden" id="about">
+    <section
+      className="w-full bg-[#FAF4EE] py-6 pb-16 relative overflow-hidden"
+      id="about"
+    >
       {/* Decorative background icons */}
       <img
         src={aboutUsRight}
@@ -60,13 +63,13 @@ export const AboutUs = () => {
             key={i}
             className="bg-white flex-shrink-0 w-[250px] md:w-[300px] snap-center flex flex-col shadow-md p-4 transition hover:shadow-lg"
           >
-           <div className="w-full h-40 mb-4 overflow-hidden rounded-lg">
-  <img
-    src={card.img}
-    alt="img"
-    className="w-full h-full object-cover"
-  />
-</div>
+            <div className="w-full h-40 mb-4 overflow-hidden rounded-lg">
+              <img
+                src={card.img}
+                alt="img"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <h3 className="text-lg font-bold mb-2 md:text-left text-center">
               {card.title}
             </h3>

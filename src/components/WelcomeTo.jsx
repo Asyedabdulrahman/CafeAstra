@@ -64,9 +64,10 @@ const WelcomeTo = () => {
           WELCOME TO OUR CAFE
         </h2>
         <p className="text-gray-600 mb-6 text-sm leading-relaxed">
-          The scallops were perfectly cooked, tender, and flavorful, paired
-          beautifully with a creamy risotto and seasonal vegetables. The
-          presentation was artful, showcasing the chef’s attention to detail.
+          CafeAstra is a warm and inviting café offering fresh coffee, juicy
+          burgers, BBQ and chicken tikka pizzas, and more. Whether you're here
+          to relax, catch up with friends, or enjoy a flavorful meal, cafeAStra
+          has something for everyone.
         </p>
 
         <div className="flex items-center justify-center md:justify-start gap-3">
