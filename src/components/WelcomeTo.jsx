@@ -61,7 +61,7 @@ const WelcomeTo = () => {
           MAKE RESERVATION
         </button>
         <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug">
-          WELCOME TO OUR LUXURY CAFE
+          WELCOME TO OUR CAFE
         </h2>
         <p className="text-gray-600 mb-6 text-sm leading-relaxed">
           The scallops were perfectly cooked, tender, and flavorful, paired
@@ -78,9 +78,9 @@ const WelcomeTo = () => {
           {/* Side text after call logo */}
           <div className="text-center md:text-left">
             <p className="text-[#74787C] text-[12px] font-extralight">
-              HOTLINE 24/7
+              Contact Number
             </p>
-            <span className="text-sm font-medium">9940241501</span>
+            <span className="text-sm font-medium">7395888258</span>
           </div>
         </div>
       </div>
