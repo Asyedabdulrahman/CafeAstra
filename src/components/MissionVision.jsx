@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ourMissionTopLeft from "../assets/ourMissionTopLeft.png";
 import ourMissionTopRight from "../assets/ourMissionTopRight.png";
 import shopImage from "../assets/shopImage2.jpg";
+import arunMama from "../assets/arunMama.jpg";
 
 const MissionVision = React.memo(() => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -125,8 +126,13 @@ const MissionVision = React.memo(() => {
             <div className="w-2 h-2 bg-[#CB3A1A] rounded-full"></div>
             <div className="w-2 h-2 bg-[#CB3A1A] rounded-full"></div>
           </div>
-          <div className="w-full max-w-sm mx-auto bg-gray-300 h-110 rounded flex flex-col justify-end">
-            <div className="bg-black text-white py-4 rounded-b text-center">
+          <div className="w-full max-w-sm mx-auto h-100 sm:h-130 rounded flex flex-col justify-end overflow-hidden">
+            <img
+              src={arunMama}
+              alt="Profile"
+              className="w-full h-fit object-cover rounded-t-lg"
+            />
+            <div className="bg-black text-white py-4 text-center">
               <h4 className="font-bold">SK</h4>
               <p className="text-xs">Founder</p>
             </div>
