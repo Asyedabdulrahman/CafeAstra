@@ -56,21 +56,16 @@ const MissionVision = React.memo(() => {
           <div className="border border-[#CB3A1A] p-6 sm:text-left text-center py-8">
             <h3 className="font-bold mb-4">MISSION</h3>
             <p className="text-sm text-gray-600 ml-2">
-              The only minor downside was the noise level, which made
-              conversation a bit challenging at times. However, this did not
-              significantly detract from the overall experience. The Culinary
-              Corner excels in delivering delicious food and exceptional
-              service.
+              To be a leading café chain recognized for excellence in quality,
+              innovation, and customer experience.
             </p>
           </div>
           <div className="border border-[#CB3A1A] p-6 sm:text-left text-center py-8">
             <h3 className="font-bold mb-4">VISION</h3>
             <p className="text-sm text-gray-600 ml-2">
-              The only minor downside was the noise level, which made
-              conversation a bit challenging at times. However, this did not
-              significantly detract from the overall experience. The Culinary
-              Corner excels in delivering delicious food and exceptional
-              service.
+              To serve high-quality, delicious food and beverages with fast,
+              friendly service in a cozy, inviting atmosphere—while continuously
+              innovating and expanding our offerings to meet every craving.
             </p>
           </div>
         </div>
@@ -90,11 +85,12 @@ const MissionVision = React.memo(() => {
               <div className="w-2 h-2 bg-[#CB3A1A] rounded-full"></div>
             </div>
             <p className="text-sm text-gray-600 mb-6 w-full max-w-md mx-auto sm:text-left text-center">
-              The only minor downside was the noise level, which made
-              conversation a bit challenging at times. However, this did not
-              significantly detract from the overall experience. The Culinary
-              Corner excels in delivering delicious food and exceptional
-              service.
+              With over 20 years of experience in the fast food industry,
+              including international expertise, the founder of{" "}
+              <span className="font-bold">CafeAstra </span>
+              brought his passion and knowledge back home to launch a thriving
+              café. Today, CafeAstra is a growing and successful franchise,
+              known for quality, flavor, and a commitment to great service.
             </p>
             <a href="#contactus">
               <button className="bg-[#CB3A1A] text-white px-6 py-2 hover:bg-red-700 transition w-full max-w-md mx-auto">
