@@ -1,9 +1,5 @@
-import React from "react";
 import aboutUsRight from "../assets/aboutUsRight.png";
 import aboutUsLeft from "../assets/aboutUsLeft.png";
-// import restaurant1 from "../assets/restaurant1.jpg";
-// import restaurant2 from "../assets/restaurant.jpg";
-// import restaurant3 from "../assets/restaurant3.jpg";
 import cafeTable from "../assets/cafeTable.jpg";
 import cafeTable2 from "../assets/cafeTable2.jpg";
 import cafeTable3 from "../assets/cafeTable3.jpg";
@@ -73,7 +69,10 @@ export const AboutUs = () => {
             <h3 className="text-lg font-bold mb-2 md:text-left text-center">
               {card.title}
             </h3>
-            <p className="text-gray-600 text-sm mb-4 text-left justify-center flex-1">
+            <p
+              className="text-gray-600 text-sm mb-4 justify-center flex-1"
+              style={{ textAlign: "justify" }}
+            >
               {card.desc}
             </p>
             <button className="text-[#CB3A1A] border border-[#CB3A1A] px-4 py-2 text-xs jost-600 uppercase tracking-wide w-[70%] hover:bg-red-500 hover:text-white transition md:text-left text-center mx-auto md:mx-0">

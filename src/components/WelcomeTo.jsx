@@ -66,7 +66,7 @@ const WelcomeTo = () => {
         <p className="text-gray-600 mb-6 text-sm leading-relaxed">
           CafeAstra is a warm and inviting café offering fresh coffee, juicy
           burgers, BBQ and chicken tikka pizzas, and more. Whether you're here
-          to relax, catch up with friends, or enjoy a flavorful meal, cafeAStra
+          to relax, catch up with friends, or enjoy a flavorful meal, CafeAstra
           has something for everyone.
         </p>
 

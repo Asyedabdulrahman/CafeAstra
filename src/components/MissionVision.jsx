@@ -38,30 +38,33 @@ const MissionVision = React.memo(() => {
             <div className="w-2 h-2 bg-[#CB3A1A] rounded-full"></div>
           </div>
         </div>
-
         <img
           src={ourMissionTopRight}
           alt="Decor1"
           className="absolute top-8 -right-28 w-20 h-20 hidden md:block object-contain"
           loading="lazy" // Lazy load this image
         />
-
         <img
           src={ourMissionTopLeft}
           alt="Decor1"
           className=" absolute top-8 -left-28 w-20 h-20  hidden md:block object-contain"
           loading="lazy" // Lazy load this image
         />
-
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="border border-[#CB3A1A] p-6 sm:text-left text-center py-8">
+          <div className="border border-[#CB3A1A] p-6 text-left py-8">
             <h3 className="font-bold mb-4">MISSION</h3>
-            <p className="text-sm text-gray-600 ml-2">
+            <p
+              className="text-sm text-gray-600 ml-2"
+              style={{ textAlign: "justify" }}
+            >
               To be a leading café chain recognized for excellence in quality,
               innovation, and customer experience.
             </p>
           </div>
-          <div className="border border-[#CB3A1A] p-6 sm:text-left text-center py-8">
+          <div
+            className="border border-[#CB3A1A] p-6 py-8"
+            style={{ textAlign: "justify" }}
+          >
             <h3 className="font-bold mb-4">VISION</h3>
             <p className="text-sm text-gray-600 ml-2">
               To serve high-quality, delicious food and beverages with fast,
@@ -85,7 +88,10 @@ const MissionVision = React.memo(() => {
               <div className="w-2 h-2 bg-[#CB3A1A] rounded-full"></div>
               <div className="w-2 h-2 bg-[#CB3A1A] rounded-full"></div>
             </div>
-            <p className="text-sm text-gray-600 mb-6 w-full max-w-md mx-auto sm:text-left text-center">
+            <p
+              className="text-sm text-gray-600 mb-6 w-full max-w-md mx-auto"
+              style={{ textAlign: "justify" }}
+            >
               With over 20 years of experience in the fast food industry,
               including international expertise, the founder of{" "}
               <span className="font-bold">CafeAstra </span>
@@ -110,9 +116,8 @@ const MissionVision = React.memo(() => {
             />
           </div>
         </div>
-
         {/* Meet Founder */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <button className="bg-[#CB3A1A] text-white text-xs font-semibold px-3 py-1 rounded mb-2">
             KNOW US
           </button>
@@ -137,7 +142,7 @@ const MissionVision = React.memo(() => {
               <p className="text-xs">Founder</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
