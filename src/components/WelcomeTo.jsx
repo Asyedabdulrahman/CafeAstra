@@ -63,7 +63,10 @@ const WelcomeTo = () => {
         <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug">
           WELCOME TO OUR CAFE
         </h2>
-        <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+        <p
+          className="text-gray-600 mb-6 text-sm leading-relaxed"
+          style={{ textAlign: "justify" }}
+        >
           CafeAstra is a warm and inviting café offering fresh coffee, juicy
           burgers, BBQ and chicken tikka pizzas, and more. Whether you're here
           to relax, catch up with friends, or enjoy a flavorful meal, CafeAstra

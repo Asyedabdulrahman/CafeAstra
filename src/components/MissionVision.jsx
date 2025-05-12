@@ -68,7 +68,7 @@ const MissionVision = React.memo(() => {
             <h3 className="font-bold mb-4">VISION</h3>
             <p className="text-sm text-gray-600 ml-2">
               To serve high-quality, delicious food and beverages with fast,
-              friendly service in a cozy, inviting atmosphere—while continuously
+              friendly service in a cozy, inviting atmosphere while continuously
               innovating and expanding our offerings to meet every craving.
             </p>
           </div>
