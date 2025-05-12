@@ -14,7 +14,7 @@ export const AboutUs = () => {
     {
       img: cafeTable2,
       title: "WHY CHOOSE US",
-      desc: "We offer fresh, flavorful food, fast service, and a vibrant space to unwind. Whether it's coffee, burgers, or BBQ pizza—you'll always find quality at CafeAstra.",
+      desc: "We offer fresh, flavorful food, fast service, and a vibrant space to unwind. Whether it's coffee, burgers, or BBQ pizza you'll always find quality at CafeAstra.",
     },
     {
       img: cafeTable3,
