@@ -86,23 +86,25 @@ const InteriorSection = () => {
       {isMobile ? (
         <div
           className="slider"
-          style={{ "--width": "200px", "--height": "100px", "--quantity": 4 }}
+          style={{ "--width": "250px", "--height": "100px", "--quantity": 4 }}
         >
           <div className="list">
             {[
-              { number: "20", label: "Categories" },
-              { number: "100", label: "Food Items" },
-              { number: "35", label: "Combos" },
-              { number: "20", label: "Special Items" },
+              { number: "7395888258", label: "Franchise Enquiry" },
+              { number: "7395888258", label: "Franchise Enquiry" },
+              { number: "7395888258", label: "Franchise Enquiry" },
+              { number: "7395888258", label: "Franchise Enquiry" },
             ].map((item, index) => (
               <div
                 key={index}
                 className="item flex flex-col items-center justify-center text-center"
                 style={{ "--position": index + 1 }}
               >
-                <h2 className="text-5xl font-extrabold">{item.number}+</h2>
-                <p className="uppercase text-lg font-medium mt-1 tracking-wide">
+                <h2 className="text-2xl font-extrabold inline-flex">
                   {item.label}
+                </h2>
+                <p className="uppercase text-lg font-medium mt-1 tracking-wide">
+                  {item.number}
                 </p>
               </div>
             ))}

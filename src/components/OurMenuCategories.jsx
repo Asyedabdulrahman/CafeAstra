@@ -94,30 +94,42 @@ const OurMenuCategories = () => {
               <img
                 src={menuCard}
                 alt="menuCardImage"
-                className="rounded-lg h-60 w-full object-contain" // <- add these classes
+                className="rounded-lg h-60 w-full object-contain"
                 loading="lazy"
               />
 
-              <div className="p-4">
-                {categories.map((category, idx) => (
-                  <div
-                    key={idx}
-                    className="border-b py-4 flex justify-between items-start"
-                  >
-                    <div>
-                      <h3 className="font-bold">{category.name}</h3>
-                      <p className="text-xs text-gray-500">
-                        {category.description}
-                      </p>
+              <div className="p-4 flex justify-center items-center">
+                <div className="grid grid-cols-2 gap-x-4 gap-y-3">
+                  {[
+                    "Soups",
+                    "Quick Bites",
+                    "Fried Chicken Starters",
+                    "Garlic Bread",
+                    "Momos",
+                    "Maggi",
+                    "Pasta",
+                    "Burgers",
+                    "Sandwich",
+                    "Pizzas",
+                    "Salad",
+                    "Wraps",
+                    "Bread with Spread",
+                    "Milkshakes",
+                    "Smoothies",
+                    "Fresh Juice",
+                    "Hot Beverages",
+                    "Desserts",
+                    "Ice Creams Scoops",
+                    "Drinks",
+                  ].map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="py-2 px-3 text-sm font-medium text-gray-700 text-center transition duration-200"
+                    >
+                      {item}
                     </div>
-                    <div>
-                      <span className="text-red-600 font-bold">
-                        {category.items}
-                      </span>
-                      <span className="text-red-600 inline-block">+</span>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </>
           )}
