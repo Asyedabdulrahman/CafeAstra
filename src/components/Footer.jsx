@@ -59,7 +59,10 @@ const Footer = () => {
           <h3 className="font-bold mb-4 border-b border-gray-600 pb-2">
             GET IN TOUCH
           </h3>
-          <p className="mb-2">JK ROAD ANNA NAGAR TAMIL NADU - 54</p>
+          <p className="mb-2">
+            4/709, Venketeshwara colony, Nehru nagar, Perungudi, Chennai -
+            600096
+          </p>
           <p className="mb-4">cafeastra@franchise.com</p>
           <div className="flex space-x-3">
             <img src={facebook} alt="" className="h-5 w-5 cursor-pointer " />
