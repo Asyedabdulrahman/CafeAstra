@@ -14,16 +14,34 @@ const Cta = () => {
     email: "",
     location: "",
   });
+  const [errors, setErrors] = useState({ email: "" });
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.com$/;
+    return emailRegex.test(email);
+  };
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
+
+    if (name === "email") {
+      if (!validateEmail(value)) {
+        setErrors((prev) => ({ ...prev, email: "Invalid email format." }));
+      } else {
+        setErrors((prev) => ({ ...prev, email: "" }));
+      }
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (errors.email) {
+      return; // Prevent submission if there are errors
+    }
     emailjs
       .send(
         "service_m7598jw",
@@ -96,13 +114,40 @@ const Cta = () => {
                   {field}
                 </label>
                 <input
-                  type="text"
+                  type={
+                    field === "phone" || field === "email" ? "text" : "text"
+                  }
+                  inputMode={field === "phone" ? "numeric" : undefined}
+                  pattern={
+                    field === "phone"
+                      ? "[0-9]*"
+                      : field === "email"
+                      ? "^[a-zA-Z][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+.com$"
+                      : undefined
+                  }
                   name={field}
                   placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
                   value={formData[field]}
+                  onInput={(e) => {
+                    if (field === "phone") {
+                      e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                    } else if (field === "name") {
+                      e.target.value = e.target.value.replace(
+                        /[^a-zA-Z\s]/g,
+                        ""
+                      );
+                    }
+                  }}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+                  className={`border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400 ${
+                    field === "email" && errors.email ? "border-red-500" : ""
+                  }`}
                 />
+                {field === "email" && errors.email && (
+                  <span className="text-red-500 text-sm mt-1">
+                    {errors.email}
+                  </span>
+                )}
               </div>
             ))}
             <button
