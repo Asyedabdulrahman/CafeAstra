@@ -22,11 +22,11 @@ const Footer = () => {
         <div className="max-w-screen-xl mx-auto flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
           {/* Left Section */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 text-center sm:text-left">
-            <div className="md:flex justify-center sm:justify-start space-x-2 hidden">
+            {/* <div className="md:flex justify-center sm:justify-start space-x-2 hidden">
               <span className="w-6 h-6 bg-gray-300 rounded-full" />
               <span className="w-6 h-6 bg-gray-300 rounded-full" />
               <span className="w-6 h-6 bg-gray-300 rounded-full" />
-            </div>
+            </div> */}
             <p className="text-gray-300 text-sm">
               Are You{" "}
               <span className="font-semibold">WANT TO TAKE FRANCHISE</span>,{" "}
@@ -46,7 +46,9 @@ const Footer = () => {
             </div>
             <div className="text-center sm:text-left">
               <p className="text-xs">CONTACT US</p>
-              <p className="font-semibold text-sm">enquiry +91 7395888258 </p>
+              <p className="font-semibold text-sm">
+                enquiry <a href="tel:+917395888250">+91 7395888258</a>
+              </p>
             </div>
           </div>
         </div>

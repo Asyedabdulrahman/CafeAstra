@@ -19,7 +19,7 @@ const HeroComponent = React.memo(() => {
 
   return (
     <div
-      className="relative w-full h-screen bg-center bg-cover flex items-center justify-center "
+      className="relative w-full h-screen bg-center bg-cover flex items-center justify-center"
       // style={{ backgroundImage: `url(${hero2})` }}
     >
       <img

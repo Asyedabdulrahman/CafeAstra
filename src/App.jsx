@@ -13,7 +13,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header />
       <HeroComponent />
       <WelcomeTo />
