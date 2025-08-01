@@ -14,6 +14,11 @@ import twitter from "../assets/twitter2.png";
 import instagram from "../assets/instagram.png";
 import shawarmaFooter from "../assets/ctaShawarma4x.png";
 
+import cafeTable from "../assets/cafeTable.jpg";
+import cafeTable2 from "../assets/cafeTable2.jpg";
+import cafeTable3 from "../assets/cafeTable3.jpg";
+import welcomeimg from "../assets/shopImage2.jpg";
+
 const Footer = () => {
   return (
     <footer className="bg-[#0f0f0f] text-white text-sm">
@@ -31,7 +36,7 @@ const Footer = () => {
               Are You{" "}
               <span className="font-semibold">WANT TO TAKE FRANCHISE</span>,{" "}
               <a
-                href="#contactus"
+                href="tel:+917395888250"
                 className="underline font-semibold text-white"
               >
                 CONTACT US
@@ -47,7 +52,10 @@ const Footer = () => {
             <div className="text-center sm:text-left">
               <p className="text-xs">CONTACT US</p>
               <p className="font-semibold text-sm">
-                enquiry <a href="tel:+917395888250">+91 7395888258</a>
+                enquiry{" "}
+                <a href="tel:+917395888250" className="underline">
+                  +91 7395888258
+                </a>
               </p>
             </div>
           </div>
@@ -127,12 +135,25 @@ const Footer = () => {
           <h3 className="font-bold mb-4 border-b border-gray-600 pb-2">
             AMBIENCE
           </h3>
-          <div className="grid grid-cols-3 gap-2">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} className="bg-gray-300 h-16" />
-            ))}
+
+          <div className="grid grid-cols-4 grid-rows-2 gap-2">
+            {[cafeTable, cafeTable2, cafeTable3, cafeTable3, welcomeimg].map(
+              (imageName, i) => (
+                <img
+                  key={i}
+                  src={imageName}
+                  alt={`Gallery image ${i + 1}`}
+                  className={
+                    i === 0
+                      ? "col-span-2 row-span-2 h-full w-full object-cover" // Special classes for the first image
+                      : "h-full w-full object-cover" // Classes for the other images
+                  }
+                />
+              )
+            )}
           </div>
         </div>
+
         <img
           src={shawarmaFooter}
           alt="shawarmaFooter"
