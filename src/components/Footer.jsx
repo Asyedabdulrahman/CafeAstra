@@ -74,28 +74,6 @@ const Footer = () => {
             600096
           </p>
           <p className="mb-4">cafeastra@franchise.com</p>
-          <div className="flex space-x-3">
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <img src={facebook} alt="" className="h-5 w-5 cursor-pointer" />
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <img src={twitter} alt="" className="h-5 w-5 cursor-pointer" />
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <img
-                src={linkedin}
-                alt="linkedinlogo"
-                className="h-5 w-5 cursor-pointer "
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/cafeastraofficial.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={instagram} alt="" className="h-5 w-5 cursor-pointer" />
-            </a>
-          </div>
         </div>
 
         {/* Food Menu */}
