@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import ourMissionTopLeft from "../assets/ourMissionTopLeft.png";
 import ourMissionTopRight from "../assets/ourMissionTopRight.png";
 import shopImage from "../assets/shopImage2.jpg";
-import arunMama from "../assets/arunMama.jpg";
 
 const MissionVision = React.memo(() => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);

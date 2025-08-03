@@ -1,5 +1,4 @@
 import aboutUsRight from "../assets/aboutUsRight.png";
-import aboutUsLeft from "../assets/aboutUsLeft.png";
 import cafeTable from "../assets/cafeTable.jpg";
 import cafeTable2 from "../assets/cafeTable2.jpg";
 import cafeTable3 from "../assets/cafeTable3.jpg";
@@ -34,12 +33,7 @@ export const AboutUs = () => {
         alt="Decor1"
         className="absolute top-8 right-8 w-40 h-40 opacity-50 hidden md:block"
       />
-
-      <img
-        src={aboutUsLeft}
-        alt="Decor4"
-        className="absolute bottom-26 left-28 w-22 h-22 object-contain hidden md:block"
-      />
+      {/* 
 
       {/* Section title */}
       <div className="text-center mb-6">
@@ -75,9 +69,6 @@ export const AboutUs = () => {
             >
               {card.desc}
             </p>
-            <button className="text-[#CB3A1A] border border-[#CB3A1A] px-4 py-2 text-xs jost-600 uppercase tracking-wide w-[70%] hover:bg-red-500 hover:text-white transition md:text-left text-center mx-auto md:mx-0">
-              Read More →
-            </button>
           </div>
         ))}
       </div>
