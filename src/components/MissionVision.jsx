@@ -74,11 +74,11 @@ const MissionVision = React.memo(() => {
         </div>
 
         {/* Franchise Details */}
-        <div className="flex flex-col md:flex-row items-center text-center md:text-left bg-[#F6F6F6] p-6 sm:p-10 lg:p-16 rounded-lg shadow-md min-h-[70vh] space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
+        <div className="flex flex-col md:flex-row items-center text-center bg-[#F6F6F6] p-6 sm:p-10 lg:p-16 rounded-lg shadow-md min-h-[70vh] space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
           {/* TEXT CONTENT CONTAINER */}
           {/* - flex-1 allows this container to grow and fill available space. */}
           {/* - Order set to 2 on mobile (order-2) and 1 on desktop (md:order-1) to ensure text is below the image on small screens. */}
-          <div className="flex-1 flex flex-col items-center md:items-start order-2 md:order-1">
+          <div className="flex-1 flex flex-col items-center">
             <button className="bg-[#CB3A1A] text-xs text-white font-semibold px-3 py-1 m-4 rounded mb-3">
               ABOUT
             </button>
@@ -97,16 +97,23 @@ const MissionVision = React.memo(() => {
               <div className="w-2 h-2 bg-[#CB3A1A] rounded-full"></div>
             </div>
 
-            <p
-              className="text-base text-gray-700 mb-8 w-full max-w-md mx-auto md:mx-0"
-              style={{ textAlign: "justify" }}
-            >
-              With over 20 years of experience in the fast food industry,
-              including international expertise, the founder of{" "}
-              <span className="font-bold">CafeAstra </span>
-              brought his passion and knowledge back home to launch a thriving
-              café. Today, CafeAstra is a growing and successful franchise,
-              known for quality, flavor, and a commitment to great service.
+            <p className="text-base text-gray-700 mb-8 w-full mx-auto md:mx-0">
+              <span className="block max-w-xl mx-auto text-center">
+                With over 20 years of experience in the fast food industry,
+                including international,
+              </span>
+              <span className="block max-w-lg mx-auto text-center">
+                The founder of <span className="font-bold">CafeAstra</span>{" "}
+                brought his passion and knowledge back home to launch a thriving
+                café.
+              </span>
+              <span className="block max-w-md mx-auto text-center">
+                Today, <span className="font-bold">CafeAstra</span> is a growing
+                and successful franchise,
+              </span>
+              <span className="block max-w-sm mx-auto text-center">
+                known for quality, flavor, and a commitment to great service.
+              </span>
             </p>
 
             <a href="#contactus" className="w-full md:w-auto">
@@ -116,12 +123,28 @@ const MissionVision = React.memo(() => {
               </button>
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+});
 
-          {/* IMAGE CONTAINER */}
-          {/* - Now visible on all screen sizes. */}
-          {/* - Has a fixed height on mobile and takes the full container height on desktop. */}
-          {/* - Order set to 1 on mobile (order-1) and 2 on desktop (md:order-2) to appear on top on small screens. */}
-          <div className="w-full md:w-2/5 h-80 md:h-[60vh] order-1 md:order-2">
+export default MissionVision;
+
+{
+  /* IMAGE CONTAINER */
+}
+{
+  /* - Now visible on all screen sizes. */
+}
+{
+  /* - Has a fixed height on mobile and takes the full container height on desktop. */
+}
+{
+  /* - Order set to 1 on mobile (order-1) and 2 on desktop (md:order-2) to appear on top on small screens. */
+}
+{
+  /* <div className="w-full md:w-2/5 h-80 md:h-[60vh] order-1 md:order-2">
             <img
               src={shopImage}
               alt="CafeAstra franchise interior"
@@ -130,11 +153,5 @@ const MissionVision = React.memo(() => {
               }`}
               onLoad={() => setIsImageLoaded(true)}
             />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-});
-
-export default MissionVision;
+          </div> */
+}
