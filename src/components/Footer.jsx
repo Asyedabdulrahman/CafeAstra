@@ -8,10 +8,6 @@ import {
   PhoneCall,
   Twitter,
 } from "lucide-react";
-import linkedin from "../assets/linkedin.png";
-import facebook from "../assets/facebook2.png";
-import twitter from "../assets/twitter2.png";
-import instagram from "../assets/instagram.png";
 import shawarmaFooter from "../assets/ctaShawarma4x.png";
 
 import cafeTable from "../assets/cafeTable.jpg";
@@ -27,11 +23,7 @@ const Footer = () => {
         <div className="max-w-screen-xl mx-auto flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
           {/* Left Section */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 text-center sm:text-left">
-            {/* <div className="md:flex justify-center sm:justify-start space-x-2 hidden">
-              <span className="w-6 h-6 bg-gray-300 rounded-full" />
-              <span className="w-6 h-6 bg-gray-300 rounded-full" />
-              <span className="w-6 h-6 bg-gray-300 rounded-full" />
-            </div> */}
+            </div>
             <p className="text-gray-300 text-sm">
               Are You{" "}
               <span className="font-semibold">WANT TO TAKE FRANCHISE</span>,{" "}
