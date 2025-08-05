@@ -84,7 +84,7 @@ const WelcomeTo = () => {
             <p className="text-[#74787C] text-[12px] font-extralight">
               Contact Number
             </p>
-            <a href="tel:+7395888258">
+            <a href="tel:7395888258">
               <span className="text-sm font-medium underline">7395888258</span>
             </a>
           </div>
