@@ -651,7 +651,7 @@ const Cta = () => {
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className={`
-                  fixed bottom-5 right-5 px-8 py-4 rounded-lg shadow-xl text-lg font-medium
+                  fixed bottom-5 right-5 px-8 py-4 rounded-lg shadow-xl text-lg font-medium z-50
                   ${
                     submitStatus === "success"
                       ? "bg-green-500 text-white"
