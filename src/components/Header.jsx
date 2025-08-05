@@ -20,7 +20,7 @@ const Header = () => {
         </div>
 
         {/* Center (Nav Links) */}
-        <div className="hidden md:flex gap-6 text-sm justify-center w-1/3">
+        <div className="hidden md:flex flex-wrap gap-4 text-sm justify-center flex-grow max-w-full px-4">
           <a href="" className="hover:text-gray-400 transition">
             HOME
           </a>

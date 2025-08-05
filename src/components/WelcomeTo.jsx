@@ -57,7 +57,7 @@ const WelcomeTo = () => {
 
       {/* Text Content */}
       <div className="mt-8 md:mt-0 md:ml-12 max-w-sm md:max-w-md text-center md:text-left">
-        <button className="bg-[#CB3A1A] text-white text-xs px-5 py-2 mb-4 tracking-wide rounded-sm">
+        <button className="bg-[#5a5a5a] text-white font-bold text-xs px-5 py-2 mb-4 tracking-wide rounded-sm">
           MAKE RESERVATION
         </button>
         <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug">
@@ -84,8 +84,9 @@ const WelcomeTo = () => {
             <p className="text-[#74787C] text-[12px] font-extralight">
               Contact Number
             </p>
-            <a href="tel:+7395888258"></a>
-            <span  className="text-sm font-medium">7395888258</span>
+            <a href="tel:+7395888258">
+              <span className="text-sm font-medium underline">7395888258</span>
+            </a>
           </div>
         </div>
       </div>

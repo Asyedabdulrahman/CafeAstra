@@ -1,15 +1,15 @@
 import React, { memo } from "react";
-
 import {
   Facebook,
-  FacebookIcon,
+  Instagram,
   Linkedin,
-  LucideFacebook,
   PhoneCall,
   Twitter,
 } from "lucide-react";
-import shawarmaFooter from "../assets/ctaShawarma4x.png";
 
+import instagram from "../assets/instagram.png";
+
+import shawarmaFooter from "../assets/ctaShawarma4x.png";
 import cafeTable from "../assets/cafeTable.jpg";
 import cafeTable2 from "../assets/cafeTable2.jpg";
 import cafeTable3 from "../assets/cafeTable3.jpg";
@@ -23,7 +23,6 @@ const Footer = () => {
         <div className="max-w-screen-xl mx-auto flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
           {/* Left Section */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 text-center sm:text-left">
-            </div>
             <p className="text-gray-300 text-sm">
               Are You{" "}
               <span className="font-semibold">WANT TO TAKE FRANCHISE</span>,{" "}
@@ -61,11 +60,19 @@ const Footer = () => {
           <h3 className="font-bold mb-4 border-b border-gray-600 pb-2">
             GET IN TOUCH
           </h3>
-          <p className="mb-2">
+          <address className="not-italic mb-2">
             4/709, Venketeshwara colony, Nehru nagar, Perungudi, Chennai -
             600096
-          </p>
+          </address>
           <p className="mb-4">cafeastra@franchise.com</p>
+          <a
+            href="https://www.instagram.com/cafeastraofficial.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2"
+          >
+            <img src={instagram} alt="instagram" className="w-6 h-6" />
+          </a>
         </div>
 
         {/* Food Menu */}
@@ -94,9 +101,9 @@ const Footer = () => {
             WORKING HOURS
           </h3>
           <ul className="space-y-2 text-sm">
-            <li>Monday - Friday 09:00 - 22:00</li>
-            <li>Saturday 11:00 - 00:00</li>
-            <li>Sunday 11:00 - 23:00</li>
+            <li>Monday - Friday 9 AM - 10 PM</li>
+            <li>Saturday 9 AM - 10 PM</li>
+            <li>Sunday 11 AM - 11 PM</li>
           </ul>
         </div>
 
@@ -105,18 +112,18 @@ const Footer = () => {
           <h3 className="font-bold mb-4 border-b border-gray-600 pb-2">
             AMBIENCE
           </h3>
-
           <div className="grid grid-cols-4 grid-rows-2 gap-2">
             {[cafeTable, cafeTable2, cafeTable3, cafeTable3, welcomeimg].map(
               (imageName, i) => (
                 <img
+                  loading="lazy"
                   key={i}
                   src={imageName}
                   alt={`Gallery image ${i + 1}`}
                   className={
                     i === 0
-                      ? "col-span-2 row-span-2 h-full w-full object-cover" // Special classes for the first image
-                      : "h-full w-full object-cover" // Classes for the other images
+                      ? "col-span-2 row-span-2 h-full w-full object-cover"
+                      : "h-full w-full object-cover"
                   }
                 />
               )
@@ -124,6 +131,7 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Decorative Image */}
         <img
           src={shawarmaFooter}
           alt="shawarmaFooter"
@@ -135,12 +143,8 @@ const Footer = () => {
       <div className="border-t border-gray-700 py-4 px-4 md:px-6 text-center text-xs">
         <p>© Copyright Delish. All Rights Reserved.</p>
         <div className="flex justify-center space-x-6 mt-2">
-          <a href="#" className="hover:underline">
-            Terms Of Use
-          </a>
-          <a href="#" className="hover:underline">
-            Privacy Policy
-          </a>
+          <p className="hover:underline">Terms Of Use</p>
+          <p className="hover:underline">Privacy Policy</p>
         </div>
       </div>
     </footer>
