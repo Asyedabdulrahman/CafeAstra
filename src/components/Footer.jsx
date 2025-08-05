@@ -27,7 +27,7 @@ const Footer = () => {
               Are You{" "}
               <span className="font-semibold">WANT TO TAKE FRANCHISE</span>,{" "}
               <a
-                href="tel:+917395888250"
+                href="tel:7395888250"
                 className="underline font-semibold text-white"
               >
                 CONTACT US
@@ -44,7 +44,7 @@ const Footer = () => {
               <p className="text-xs">CONTACT US</p>
               <p className="font-semibold text-sm">
                 enquiry{" "}
-                <a href="tel:+917395888250" className="underline">
+                <a href="tel:7395888250" className="underline">
                   +91 7395888258
                 </a>
               </p>
