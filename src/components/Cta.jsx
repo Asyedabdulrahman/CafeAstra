@@ -420,7 +420,7 @@ const Cta = () => {
   const submitEmail = useCallback(async (data) => {
     return emailjs.send(
       "service_yhjca2g",
-      "template_oxz8ajb",
+      "template_a7r748r",
       {
         from_name: data.name,
         from_email: data.email,
@@ -482,14 +482,14 @@ const Cta = () => {
       {/* Hero Section */}
       <div className="bg-[#0B0A0AC9] text-white py-10 md:py-12 relative overflow-hidden">
         <div className="container mx-auto px-6 flex flex-col items-center text-center">
-          <p className="bg-[#CB3A1A] text-sm font-semibold px-4 py-2 rounded mb-4">
-            CRISPY, EVERY BITE TASTE
-          </p>
+            {/* <p className="bg-[#CB3A1A] text-sm font-semibold px-4 py-2  mb-4">
+              CRISPY, EVERY BITE TASTE
+            </p> */}
           <h1 className="text-xl sm:text-3xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight">
             ARE YOU LOOKING TO TAKE A FRANCHISE?
           </h1>
           <a href="#contactus">
-            <button className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-gray-800 transition">
+            <button className="bg-[#CB3A1A] hover:bg-white hover:text-[#CB3A1A] transition  px-6 py-2 rounded  ">
               JOIN WITH US →
             </button>
           </a>

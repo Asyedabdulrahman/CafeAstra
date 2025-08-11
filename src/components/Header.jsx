@@ -41,7 +41,7 @@ const Header = () => {
         {/* Right (CTA + Mobile Toggle) */}
         <div className="w-1/3 flex justify-end items-center">
           <a href="#contactus">
-            <button className="hidden md:block border border-red-600 px-4 py-2 text-xs hover:bg-white hover:text-black transition">
+            <button className="hidden md:block  bg-[#CB3A1A] px-4 py-2 text-xs hover:bg-white hover:text-[#CB3A1A] transition">
               JOIN WITH US →
             </button>
           </a>
@@ -99,7 +99,7 @@ const Header = () => {
           >
             CONTACT US
           </a>
-          <button className="mt-6 w-full border border-red-600 px-4 py-2 text-sm hover:bg-white hover:text-black transition">
+          <button className="mt-6 w-full border bg-[#CB3A1A] px-4 py-2 text-sm  hover:text-black transition">
             JOIN WITH US →
           </button>
         </div>

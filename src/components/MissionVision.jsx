@@ -23,7 +23,7 @@ const MissionVision = React.memo(() => {
       <div className="w-[90vw] md:w-[65vw] mx-auto px-4 relative">
         {/* Mission and Vision */}
         <div className="text-center mb-12">
-          <button className="bg-[#CB3A1A] text-lg text-white font-semibold px-3 py-1 rounded mb-2">
+          <button className="bg-[#CB3A1A] text-lg text-white font-semibold px-3 py-1 mb-2">
             CLIENT TESTIMONIALS
           </button>
           <h2 className="text-3xl md:text-4xl font-extrabold">
@@ -74,12 +74,12 @@ const MissionVision = React.memo(() => {
         </div>
 
         {/* Franchise Details */}
-        <div className="flex flex-col md:flex-row items-center text-center bg-[#F6F6F6] p-6 sm:p-10 lg:p-16 rounded-lg shadow-md min-h-[70vh] space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
+        <div className="flex flex-col md:flex-row items-center text-center bg-[#d8d5d5] p-6 sm:p-10 lg:p-16 rounded-lg shadow-md min-h-[70vh] space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
           {/* TEXT CONTENT CONTAINER */}
           {/* - flex-1 allows this container to grow and fill available space. */}
           {/* - Order set to 2 on mobile (order-2) and 1 on desktop (md:order-1) to ensure text is below the image on small screens. */}
           <div className="flex-1 flex flex-col items-center">
-            <button className="bg-[#CB3A1A] text-xs text-white font-semibold px-3 py-1 m-4 rounded mb-3">
+            <button className="bg-[#CB3A1A] text-xs text-white font-semibold px-3 py-1 m-4   mb-3">
               ABOUT
             </button>
 
@@ -118,7 +118,7 @@ const MissionVision = React.memo(() => {
 
             <a href="#contactus" className="w-full md:w-auto">
               {/* Button takes full width on mobile and auto width on desktop */}
-              <button className="bg-[#CB3A1A] text-white px-8 py-3 hover:bg-red-700 transition rounded-md w-full md:w-auto">
+              <button className="px-8 py-3 bg-[#CB3A1A] hover:bg-white hover:text-[#CB3A1A] text-white transition  rounded-md w-full md:w-auto">
                 CONTACT US
               </button>
             </a>
