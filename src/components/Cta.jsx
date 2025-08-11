@@ -419,7 +419,7 @@ const Cta = () => {
   // Email submission function
   const submitEmail = useCallback(async (data) => {
     return emailjs.send(
-      "service_m7598jw",
+      "service_yhjca2g",
       "template_oxz8ajb",
       {
         from_name: data.name,
