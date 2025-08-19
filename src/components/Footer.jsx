@@ -61,8 +61,7 @@ const Footer = () => {
             GET IN TOUCH
           </h3>
           <address className="not-italic mb-2">
-            4/709, Venketeshwara colony, Nehru nagar, Perungudi, Chennai -
-            600096
+            No: 5/12 h, mount ponnamallae road, nandampakkam ch - 600089
           </address>
           <p className="mb-4">cafeastra@franchise.com</p>
           <a
@@ -101,9 +100,9 @@ const Footer = () => {
             WORKING HOURS
           </h3>
           <ul className="space-y-2 text-sm">
-            <li>Monday - Friday 9 AM - 10 PM</li>
-            <li>Saturday 9 AM - 10 PM</li>
-            <li>Sunday 11 AM - 11 PM</li>
+            <li>Monday - Friday: 9 AM - 10 PM</li>
+            <li>Saturday: 9 AM - 10 PM</li>
+            <li>Sunday: 11 AM - 11 PM</li>
           </ul>
         </div>
 

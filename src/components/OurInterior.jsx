@@ -140,7 +140,7 @@ const InteriorSection = () => {
       {/* Our Interiors Title + Arrows */}
       <div className="md:w-[70vw] w-[95vw] mx-auto px-4 flex items-center justify-between md:mb-10 mb-5">
         <div>
-          <button className="bg-[#CB3A1AD6] text-xs jost-700 rounded-sm px-4 py-1 mb-2">
+          <button className="bg-[#333333] text-white text-xs jost-700 rounded-sm px-4 py-1 mb-2">
             VIEW
           </button>
           <h2 className="text-3xl md:text-4xl font-extrabold jost-900">

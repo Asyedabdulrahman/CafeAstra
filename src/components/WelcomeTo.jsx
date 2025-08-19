@@ -57,7 +57,7 @@ const WelcomeTo = () => {
 
       {/* Text Content */}
       <div className="mt-8 md:mt-0 md:ml-12 max-w-sm md:max-w-md text-center md:text-left">
-        <button className="bg-[#CB3A1A] text-white font-bold text-xs px-5 py-2 mb-4 tracking-wide">
+        <button className="bg-[#333333] text-white font-bold text-xs px-5 py-2 mb-4 tracking-wide">
           MAKE RESERVATION
         </button>
         <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug">

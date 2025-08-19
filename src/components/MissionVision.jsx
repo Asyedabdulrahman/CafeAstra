@@ -23,7 +23,7 @@ const MissionVision = React.memo(() => {
       <div className="w-[90vw] md:w-[65vw] mx-auto px-4 relative">
         {/* Mission and Vision */}
         <div className="text-center mb-12">
-          <button className="bg-[#CB3A1A] text-lg text-white font-semibold px-3 py-1 mb-2">
+          <button className="bg-[#333333] text-lg text-white font-semibold px-3 py-1 mb-2">
             CLIENT TESTIMONIALS
           </button>
           <h2 className="text-3xl md:text-4xl font-extrabold">
@@ -79,7 +79,7 @@ const MissionVision = React.memo(() => {
           {/* - flex-1 allows this container to grow and fill available space. */}
           {/* - Order set to 2 on mobile (order-2) and 1 on desktop (md:order-1) to ensure text is below the image on small screens. */}
           <div className="flex-1 flex flex-col items-center">
-            <button className="bg-[#CB3A1A] text-xs text-white font-semibold px-3 py-1 m-4   mb-3">
+            <button className="bg-[#333333]  text-xs text-white font-semibold px-3 py-1 m-4   mb-3">
               ABOUT
             </button>
 

@@ -72,7 +72,7 @@ const OurMenuCategories = () => {
     >
       {/* Top Bar */}
       <div className="flex justify-between items-center mb-4">
-        <button className="bg-red-600 text-white text-sm font-semibold px-3 py-1 ">
+        <button className="bg-[#333333] text-white  text-sm font-semibold px-3 py-1 ">
           MENU
         </button>
       </div>
